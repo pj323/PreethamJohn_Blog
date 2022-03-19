@@ -586,15 +586,13 @@ if(isset($_POST['submit'])){
 
 try {
   $mail->isSMTP();
-  $mail->Host = 'smtp.gmail.com';
+  $mail->Host = '';
   $mail->SMTPAuth = true;
-  $mail->Username = 'preethamjohn77@gmail.com';
-  $mail->Password = 'Killit@02';
-  $mail->SMTPSecure = 'ssl';
-  $mail->Port = 465;
-
-  // $mail->setFrom('preethamjohn77@gmail.com');
-  $mail->addAddress('preethamjohn77@gmail.com');
+  $mail->Username = '';
+  $mail->Password = '';
+  $mail->SMTPSecure = '';
+  $mail->Port = ;  // $mail->setFrom('');
+  $mail->addAddress('');
 
   $mail->isHTML(true);
   $mail->Subject = 'Contact Form';
